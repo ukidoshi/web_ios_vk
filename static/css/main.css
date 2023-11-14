@@ -1,0 +1,109 @@
+.container {
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+.question {
+    border: 1px solid rgb(128, 128, 128);
+    margin-top: 30px;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.question-image {
+    max-height: 200px;
+    max-width: 200px;
+}
+
+.question-title {
+    font-size: 30px;
+    text-underline: aqua;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+.question-text {
+    font-size: 16px;
+}
+
+.question-info {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.question-info .tags {
+    border-radius: 2px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.question-info .score {
+    max-width: 100px;
+    max-height: 25px;
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 12px;
+    margin-right: 20px;
+}
+
+.question-info .score a {
+    text-decoration: none;
+}
+
+.question-info .score .plus {
+    color: green;
+}
+
+.question-info .score .minus {
+    color: red;
+}
+
+.question-info .best-ans {
+    color: green;
+}
+
+.tags {
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.answers {
+    margin-bottom: 30px;
+}
+
+.answer {
+    border: 1px solid rgb(128, 128, 128);
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.user-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.answered-date {
+    font-size: 10px;
+    font-weight: inherit;
+}
+
+.asked-date {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.add-answer {
+    margin-top: 30px;
+}
+
+.add-answer label {
+    font-weight: bold;
+}
+
+.add-answer .btn {
+    margin-top: 10px;
+}
