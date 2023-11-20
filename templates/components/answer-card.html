@@ -1,0 +1,33 @@
+{% load static %}
+
+<div class="answer">
+    <div class="row">
+        <div class="col-lg-3">
+            <img class="question-image align-self-start"
+                 src="{% static 'img/4zQeMNvPkEk.jpeg' %}">
+            <div class="user-name">{{ answer.author.nickname }}</div>
+            <div class="answered-date">Answered {{ answer.creation_date }}</div>
+        </div>
+        <div class="col-lg-9 d-flex flex-column">
+            <div class="question-text">
+                {{ answer.content }}
+            </div>
+            <div class="question-info mt-auto">
+                <div class="row justify-content-between">
+                    <div class="col-8 best-ans">
+                        {% if answer.is_correct == 1 %}
+                            Answer is correct!
+                        {% endif %}
+                    </div>
+                    <div class="col-4 score">
+                        <div class="row">
+                            <a class="col-4 plus" href="#">+</a>
+                            <div class="col-4">{{ answer.get_score }}</div>
+                            <a class="col-4 minus" href="#">-</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

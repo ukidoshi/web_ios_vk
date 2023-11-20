@@ -1,0 +1,41 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+    <h2>Login</h2>
+    <p class="wrong-password-label">Неправильный пароль!</p>
+    <div class="mb-3 row">
+        <label for="login" class="col-sm-2 col-form-label">Login</label>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" id="login">
+        </div>
+    </div>
+    <div class="mb-3 row">
+        <label for="email" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-4">
+            <input type="email" class="form-control" id="email">
+        </div>
+    </div>
+    <div class="mb-3 row">
+        <label for="nickname" class="col-sm-2 col-form-label">Nickname</label>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" id="nickname">
+        </div>
+    </div>
+    <div class="mb-3 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-4">
+            <input type="password" class="form-control" id="inputPassword">
+        </div>
+    </div>
+    <div class="mb-3 row">
+        <label for="inputPasswordSecond" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-4">
+            <input type="password" class="form-control" id="inputPasswordSecond">
+        </div>
+    </div>
+    <button class="btn btn-primary mb-3">Login</button>
+    <br>
+    <a class="new-acc-link" href="{% url 'index' %}">Create new account</a>
+
+{% endblock %}

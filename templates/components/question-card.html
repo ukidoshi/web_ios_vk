@@ -1,0 +1,32 @@
+{% load static %}
+{# Страница в index #}
+
+<div class="row question">
+    <div class="col-lg-3">
+        <img src="{% static 'img/4zQeMNvPkEk.jpeg' %}" alt="" class="question-image align-self-start">
+        <div class="user-name">{{ question.author.nickname }}</div>
+        <div class="asked-date">Asked {{ question.creation_date }}</div>
+    </div>
+    <div class="col-lg-9 d-flex flex-column">
+        <a href="{% url 'question' question.id %}" class="question-title">{{ question.title }}</a>
+        <div class="question-text">{{ question.description }}</div>
+        <div class="question-info mt-auto">
+            <div class="row justify-content-between align-items-center">
+                <div class="col tags">
+                    Tags:
+                    {% for tag in question.tag.all %}
+                        <a class="badge bg-primary" style="text-decoration: none" href="{% url 'tag' tag %}">{{ tag }}</a>
+                    {% endfor %}
+                </div>
+                <div class="col">Answers: {{ question.count.count }}</div>
+                <div class="col score">
+                    <div class="row">
+                        <a class="col-4 plus" href="#">+</a>
+                        <div class="col-4">{{ question.get_score }}</div>
+                        <a class="col-4 minus" href="#">-</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -7,9 +7,7 @@
     border: 1px solid rgb(128, 128, 128);
     margin-top: 30px;
     border-radius: 10px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px 20px 10px;
 }
 
 .question-image {
@@ -106,4 +104,26 @@
 
 .add-answer .btn {
     margin-top: 10px;
+}
+
+.wrong-password-label {
+    color: red;
+}
+
+a .new-acc-link {
+    margin-top: 300px;
+}
+
+.pagination-nav {
+    margin-top: 50px;
+}
+
+.input-paginator {
+    max-width: 80px;
+    margin-right: 1px;
+}
+
+.user-div-navbar img {
+    max-width: 60px;
+    max-height: 60px;
 }

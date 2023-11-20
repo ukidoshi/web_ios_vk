@@ -1,0 +1,27 @@
+{% load static %}
+
+<nav class="pagination-nav">
+    <ul class="pagination">
+        {% if items.has_previous %}
+            <li class="page-item">
+                <a class="page-link" href="?page=1">First</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="?page={{ items.previous_page_number }}"><<</a>
+            </li>
+        {% endif %}
+
+        <li class="page-item"><p class="page-link" href="?page={{ items.number }}">Page {{ items.number }}
+            of {{ items.paginator.num_pages }}</p>
+        </li>
+
+        {% if items.has_next %}
+            <li class="page-item">
+                <a class="page-link" href="?page={{ items.next_page_number }}">>></a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="?page={{ items.paginator.num_pages }}">Last</a>
+            </li>
+        {% endif %}
+    </ul>
+</nav>

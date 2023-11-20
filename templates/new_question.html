@@ -1,0 +1,24 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+    <h2>New Question</h2>
+    <form class="ask-form" action="#">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Title</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1"
+                   placeholder="Enter here title of your question">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Text</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                      placeholder="Enter here main text of your question"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Tags</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1"
+                   placeholder="Enter tags here separated by commas">
+        </div>
+        <button class="btn btn-primary">Ask</button>
+    </form>
+{% endblock %}
